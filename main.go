@@ -11,7 +11,7 @@ func main() {
 	app := fiber.New()
 
 	// Make path with some content
-	app.Get("/hello", func(c *fiber.Ctx) error {
+	app.Get("/", func(c *fiber.Ctx) error {
 		// Return a string with a dummy text
 		return c.SendString("Hello, World 👋!")
 	})
